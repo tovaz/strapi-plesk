@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "name": "Task",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Detail": {
+      "type": "richtext"
+    },
+    "Done": {
+      "type": "boolean",
+      "default": false
+    },
+    "user_id": {
+      "plugin": "admin",
+      "model": "user"
+    }
+  }
+}
